@@ -1,17 +1,27 @@
 {
   "expo": {
-    "name": "SpaceEscapeRunner",
+    "name": "Space Escape Runner",
     "slug": "SpaceEscapeRunner",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0A0915"
+    },
     "ios": {
       "supportsTablet": true
     },
     "android": {
+      "package": "com.sharan126.spaceescaperunner",
+      "versionCode": 1,
+      "permissions": [
+        "VIBRATE"
+      ],
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
+        "backgroundColor": "#0A0915",
         "foregroundImage": "./assets/android-icon-foreground.png",
         "backgroundImage": "./assets/android-icon-background.png",
         "monochromeImage": "./assets/android-icon-monochrome.png"
@@ -19,9 +29,6 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    },
-    "plugins": [
-      "expo-font"
-    ]
+    }
   }
 }
